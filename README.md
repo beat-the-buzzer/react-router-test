@@ -1,5 +1,7 @@
 ##### 路由跳转传递参数
 
+项目运行地址：[https://beat-the-buzzer.github.io/react-router-test/#/](https://beat-the-buzzer.github.io/react-router-test/#/)
+
 路由跳转传递参数，是我们在实际应用中经常遇到的业务场景。例如，我们查询并展示了数据列表，然后点击查看详情。
 
 我们都知道，用户在提交表单的时候有两种方式，一种是get，一种是post。在后文即将介绍的传递参数的方法，和提交表单的方法有异曲同工之妙。
