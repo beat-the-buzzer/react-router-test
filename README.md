@@ -122,6 +122,27 @@ class Menu3 extends Component {
 export default Menu3;
 ```
 
+ - 使用history、location对象传递参数
+
+使用this.props.history.push进行跳转，跳转的时候，除了目标路由之外，还可以传参数。
+
+ ```jsx
+ this.props.history.push({
+    pathname: '/menu1',
+    param: {
+      text: '这是从menu4跳转带过来的参数'
+    }
+  })
+ ```
+
+目标路由页面可以使用this.props.location接收到上一级页面传过来的参数
+
+ ```jsx
+ if(this.props.location.param && this.props.location.param.text) {
+    alert(this.props.location.param.text)
+  }
+ ```
+
 以上就是react-router传递参数的一个小小总结。之后会总结react router的其他用法。
 
 项目的代码可以直接clone下来，然后：
